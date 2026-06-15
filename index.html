@@ -1443,7 +1443,7 @@
     <div class="status">
         <div class="status-cell"><span class="val">ACTIVE</span> - PROGRAMME LIVE</div>
         <div class="status-cell">STATUS: <span class="val">PF-1 PRE-LAUNCH</span></div>
-        <div class="status-cell">LOC: 51.57N 4.29W</div>
+        <div class="status-cell">LOC: 51.48N 3.72W</div>
         <div class="status-cell mono" id="utc">--:--:-- UTC</div>
     </div>
 
@@ -1487,7 +1487,7 @@
     <!-- PF-1 HERO -->
     <section class="pf1-hero">
         <div class="pf1-hero-content">
-            <div class="pf1-badge">FIRST FLIGHT - JUNE 2026</div>
+            <div class="pf1-badge">FIRST FLIGHT - JULY 2026</div>
             <h2>Pathfinder 1 "GRACE"</h2>
             <div class="sub">Custom hybrid rocket. HDPE and nitrous oxide. Built from scratch. This is where it starts.</div>
         </div>
@@ -1676,7 +1676,7 @@
             <div class="feed-countdown-wrap">
                 <div class="feed-label">PF-1 "GRACE" - LAUNCH</div>
                 <div class="feed-countdown" id="feed-countdown">T-00D 00:00:00</div>
-                <div class="feed-label">RHOSSILI BEACH - 22 JUNE 2026</div>
+                <div class="feed-label">PINK BAY, PORTHCAWL - 20 JULY 2026</div>
             </div>
         </div>
     </div>
@@ -1898,7 +1898,7 @@ document.querySelectorAll('a, .prog-phase, .sys-row, .rm-item, .spec-cell, [data
 });
 
 // Countdown
-const launch = new Date('2026-06-22T08:00:00+01:00').getTime();
+const launch = new Date('2026-07-20T08:00:00+01:00').getTime();
 function tick() {
     const diff = Math.max(0, launch - Date.now());
     const d = Math.floor(diff / 86400000);
@@ -2217,7 +2217,7 @@ function drawAltGraph() {
 }
 
 // Launch countdown
-const LAUNCH_DATE = new Date('2026-06-22T08:00:00Z');
+const LAUNCH_DATE = new Date('2026-07-20T08:00:00+01:00');
 function updateFeedCountdown() {
     const now = new Date();
     const diff = LAUNCH_DATE - now;
