@@ -1444,7 +1444,7 @@
         <div class="status-cell"><span class="val">ACTIVE</span> - PROGRAMME LIVE</div>
         <div class="status-cell">STATUS: <span class="val">PF-1 PRE-LAUNCH</span></div>
         <div class="status-cell">LOC: 51.48N 3.72W</div>
-        <div class="status-cell mono" id="utc">--:--:-- UTC</div>
+        <div class="status-cell mono" id="utc">--:--:-- BST</div>
     </div>
 
     <!-- COUNTDOWN -->
@@ -1913,9 +1913,16 @@ function tick() {
 tick();
 setInterval(tick, 1000);
 
-// UTC
+// British time (BST in summer, GMT in winter) - always shows UK time regardless of viewer location
 function utc() {
-    document.getElementById('utc').textContent = new Date().toISOString().slice(11, 19) + ' UTC';
+    const now = new Date();
+    const t = now.toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour12: false });
+    let tz = 'BST';
+    try {
+        tz = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', timeZoneName: 'short' })
+            .formatToParts(now).find(p => p.type === 'timeZoneName').value;
+    } catch (e) {}
+    document.getElementById('utc').textContent = t + ' ' + tz;
 }
 utc();
 setInterval(utc, 1000);
