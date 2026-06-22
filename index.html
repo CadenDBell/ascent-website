@@ -1442,14 +1442,14 @@
     <!-- STATUS BAR -->
     <div class="status">
         <div class="status-cell"><span class="val">ACTIVE</span> - PROGRAMME LIVE</div>
-        <div class="status-cell">STATUS: <span class="val">PF-1 PRE-LAUNCH</span></div>
-        <div class="status-cell">LOC: 51.48N 3.72W</div>
+        <div class="status-cell">STATUS: <span class="val">PF-1 ON HOLD</span></div>
+        <div class="status-cell">LOC: SOUTH WALES</div>
         <div class="status-cell mono" id="utc">--:--:-- BST</div>
     </div>
 
     <!-- COUNTDOWN -->
     <div class="countdown">
-        <div class="cd-label">T-minus to PF-1 launch</div>
+        <div class="cd-label">PF-1 launch - ON HOLD</div>
         <div class="cd-flex">
             <div class="cd-num" id="cd-d">--</div>
             <div class="cd-colon">:</div>
@@ -1465,6 +1465,7 @@
             <div class="cd-unit">MIN</div>
             <div class="cd-unit">SEC</div>
         </div>
+        <p style="position:relative; margin-top:2.5rem; max-width:580px; font-size:0.9rem; color:var(--mid); line-height:1.8;">The first flight is on hold. ASCENT is taking the proper route - joining the UK rocketry community, working toward certification, and flying with experienced support behind it. Doing it right, not fast.</p>
     </div>
 
     <!-- 100KM -->
@@ -1487,7 +1488,7 @@
     <!-- PF-1 HERO -->
     <section class="pf1-hero">
         <div class="pf1-hero-content">
-            <div class="pf1-badge">FIRST FLIGHT - JULY 2026</div>
+            <div class="pf1-badge">FIRST FLIGHT - DATE UNDER REVIEW</div>
             <h2>Pathfinder 1 "GRACE"</h2>
             <div class="sub">Custom hybrid rocket. HDPE and nitrous oxide. Built from scratch. This is where it starts.</div>
         </div>
@@ -1524,34 +1525,34 @@
     <!-- SYSTEMS -->
     <div class="systems">
         <div class="sys-row">
-            <div><span class="sys-name">Propulsion</span></div>
-            <div><span class="sys-detail">HYBRID / HDPE + N2O / 50 BAR SELF-PRESSURISING</span></div>
-            <div><span class="sys-status wip">IN PROGRESS</span></div>
-        </div>
-        <div class="sys-row">
             <div><span class="sys-name">Flight Computer</span></div>
-            <div><span class="sys-detail">RASPBERRY PI / BMP280 / MPU6050 / 50 HZ LOOP</span></div>
-            <div><span class="sys-status wip">IN PROGRESS</span></div>
+            <div><span class="sys-detail">RASPBERRY PI PICO 2 / BMP280 + MPU-6050 (+/-16G)</span></div>
+            <div><span class="sys-status ready">BENCH TESTED</span></div>
         </div>
         <div class="sys-row">
             <div><span class="sys-name">Telemetry</span></div>
-            <div><span class="sys-detail">RFM95W LORA / 868 MHZ / 1 HZ DOWNLINK</span></div>
-            <div><span class="sys-status wip">IN PROGRESS</span></div>
+            <div><span class="sys-detail">RFM95W LORA / 868 MHZ / ~4 HZ DOWNLINK</span></div>
+            <div><span class="sys-status ready">BENCH TESTED</span></div>
         </div>
         <div class="sys-row">
             <div><span class="sys-name">Recovery</span></div>
-            <div><span class="sys-detail">DUAL DEPLOY / DROGUE AT APOGEE / MAIN AT 200M</span></div>
-            <div><span class="sys-status wip">IN PROGRESS</span></div>
+            <div><span class="sys-detail">SINGLE PARACHUTE / DEPLOY AT APOGEE + T+23S BACKUP</span></div>
+            <div><span class="sys-status wip">PROTOTYPE</span></div>
+        </div>
+        <div class="sys-row">
+            <div><span class="sys-name">Propulsion</span></div>
+            <div><span class="sys-detail">HYBRID / HDPE + N2O / NOT YET FLOWN</span></div>
+            <div><span class="sys-status wip">ON HOLD</span></div>
         </div>
         <div class="sys-row">
             <div><span class="sys-name">Stabilisation</span></div>
-            <div><span class="sys-detail">SPIN STABILISED / 5 DEG FIN CANT</span></div>
-            <div><span class="sys-status wip">IN PROGRESS</span></div>
+            <div><span class="sys-detail">PASSIVE FIN STABILITY</span></div>
+            <div><span class="sys-status wip">REDESIGN</span></div>
         </div>
         <div class="sys-row">
             <div><span class="sys-name">Structure</span></div>
-            <div><span class="sys-detail">3D PRINTED PLA / CARDBOARD AIRFRAME</span></div>
-            <div><span class="sys-status wip">IN PROGRESS</span></div>
+            <div><span class="sys-detail">AIRFRAME / PF-1.1 REDESIGN</span></div>
+            <div><span class="sys-status wip">REDESIGN</span></div>
         </div>
     </div>
 
@@ -1587,10 +1588,10 @@
             <h2>Roadmap</h2>
         </div>
         <div class="rm-item">
-            <div class="rm-date active">JUL 2026</div>
+            <div class="rm-date active">ON HOLD</div>
             <div class="rm-content">
                 <h3>PF-1 "GRACE"</h3>
-                <p>First flight. Hybrid motor, ~1 km apogee, full avionics.</p>
+                <p>First flight, on hold. Joining the UK rocketry community and working toward certification so it flies properly and safely. Avionics built and bench-tested.</p>
             </div>
         </div>
         <div class="rm-item">
@@ -1674,9 +1675,9 @@
         <div class="hud-feed">
             <div class="hud-scanline"></div>
             <div class="feed-countdown-wrap">
-                <div class="feed-label">PF-1 "GRACE" - LAUNCH</div>
-                <div class="feed-countdown" id="feed-countdown">T-00D 00:00:00</div>
-                <div class="feed-label">PINK BAY, PORTHCAWL - 20 JULY 2026</div>
+                <div class="feed-label">PF-1 "GRACE" - FIRST FLIGHT</div>
+                <div class="feed-countdown" id="feed-countdown">ON HOLD</div>
+                <div class="feed-label">DATE UNDER REVIEW - CERTIFICATION ROUTE</div>
             </div>
         </div>
     </div>
@@ -1897,21 +1898,11 @@ document.querySelectorAll('a, .prog-phase, .sys-row, .rm-item, .spec-cell, [data
     el.addEventListener('mouseleave', () => cur.classList.remove('hover'));
 });
 
-// Countdown
-const launch = new Date('2026-07-20T08:00:00+01:00').getTime();
-function tick() {
-    const diff = Math.max(0, launch - Date.now());
-    const d = Math.floor(diff / 86400000);
-    const h = Math.floor((diff % 86400000) / 3600000);
-    const m = Math.floor((diff % 3600000) / 60000);
-    const s = Math.floor((diff % 60000) / 1000);
-    document.getElementById('cd-d').textContent = String(d).padStart(2, '0');
-    document.getElementById('cd-h').textContent = String(h).padStart(2, '0');
-    document.getElementById('cd-m').textContent = String(m).padStart(2, '0');
-    document.getElementById('cd-s').textContent = String(s).padStart(2, '0');
-}
-tick();
-setInterval(tick, 1000);
+// Countdown - ON HOLD pending certification / club route
+['cd-d','cd-h','cd-m','cd-s'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.textContent = '--';
+});
 
 // British time (BST in summer, GMT in winter) - always shows UK time regardless of viewer location
 function utc() {
@@ -2223,24 +2214,11 @@ function drawAltGraph() {
     ctx2.stroke();
 }
 
-// Launch countdown
-const LAUNCH_DATE = new Date('2026-07-20T08:00:00+01:00');
-function updateFeedCountdown() {
-    const now = new Date();
-    const diff = LAUNCH_DATE - now;
-    if (diff <= 0) {
-        document.getElementById('feed-countdown').textContent = 'LAUNCH DAY';
-        return;
-    }
-    const days = Math.floor(diff / 86400000);
-    const hrs = Math.floor((diff % 86400000) / 3600000);
-    const mins = Math.floor((diff % 3600000) / 60000);
-    const secs = Math.floor((diff % 60000) / 1000);
-    document.getElementById('feed-countdown').textContent =
-        `T-${days}D ${String(hrs).padStart(2,'0')}:${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}  TO LAUNCH`;
-}
-updateFeedCountdown();
-setInterval(updateFeedCountdown, 1000);
+// Launch countdown - ON HOLD pending certification / club route
+(function(){
+    var el = document.getElementById('feed-countdown');
+    if (el) el.textContent = 'ON HOLD';
+})();
 
 function startSim() {
     simRunning = true;
