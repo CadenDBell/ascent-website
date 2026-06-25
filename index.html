@@ -1398,6 +1398,32 @@
             .cursor { display: none; }
             .section-header { padding: 3rem 1.5rem 2rem; }
         }
+
+        /* PHONES */
+        @media (max-width: 600px) {
+            .hero-logo { width: 78px; height: 78px; margin-bottom: 1.5rem; }
+            .hero-pre { font-size: 0.48rem; letter-spacing: 2px; padding: 0 1.2rem; margin-bottom: 1.8rem; }
+            .hero-title { font-size: clamp(3rem, 16vw, 5.5rem); letter-spacing: 4px; }
+            .hero-after { font-size: 0.85rem; max-width: 300px; padding: 0 1.2rem; margin-top: 2rem; }
+            .tab-bar { margin-top: 2rem; }
+            .tab-btn { padding: 0.45rem 0.7rem; font-size: 0.46rem; letter-spacing: 1.2px; }
+            .status-cell { padding: 0.9rem 1rem; font-size: 0.55rem; }
+            .countdown { padding: 3rem 1.2rem; }
+            .countdown::before { font-size: 8rem; right: 1rem; }
+            .cd-num { font-size: 3rem; }
+            .cd-colon { font-size: 2rem; }
+            .big-stat-num { font-size: clamp(4rem, 24vw, 7rem); }
+            .spec-grid { grid-template-columns: repeat(2, 1fr); }
+            .spec-cell { padding: 1.5rem 1.1rem; border-right: 1px solid var(--line); }
+            .spec-cell:nth-child(even) { border-right: none; }
+            .section-header::before { font-size: 6rem; }
+            .section-header h2 { font-size: 1.9rem; }
+            .pf1-hero::before { font-size: 7rem; }
+            .pf1-hero h2 { font-size: 2.1rem; }
+            .prog-bg-num { font-size: 8rem; }
+            .rm-header h2 { font-size: 2rem; }
+            #tab-downloads > div:not(.section-header) { padding: 1.8rem 1.2rem !important; }
+        }
     </style>
 </head>
 <body>
